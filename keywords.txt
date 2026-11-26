@@ -372,3 +372,148 @@ map|globe
 map|compass
 map|world map
 map|atlas book
+food|grapes
+food|strawberry
+food|pear fruit
+food|pineapple
+food|lemon fruit
+food|cherries
+food|peach fruit
+food|broccoli
+food|potato
+food|corn on the cob
+food|green peas
+food|lettuce
+food|onion
+food|pumpkin
+food|cucumber
+food|bell pepper
+food|rice bowl
+food|pasta
+food|milk glass
+food|yogurt
+food|fish fillet
+food|beans
+food|nuts almonds
+food|honey jar
+animal|raccoon
+animal|hippopotamus
+animal|rhinoceros
+animal|cheetah
+animal|leopard
+animal|otter
+animal|walrus
+animal|swan
+animal|pigeon
+animal|hedgehog
+animal|hamster
+animal|turkey bird
+animal|beehive
+animal|worm on soil
+animal|bird nest with eggs
+animal|lamb
+animal|puppy
+animal|kitten
+animal|calf
+animal|foal
+animal|chick
+animal|duckling
+home|sofa
+home|refrigerator
+home|kitchen stove
+home|sink
+home|bathtub
+home|toothbrush
+home|soap bar
+home|towel
+home|pillow
+home|blanket
+home|broom
+home|bucket
+home|mirror
+home|bookshelf
+home|crayons
+home|paintbrush
+home|notebook
+home|eraser
+home|teapot
+home|vase of flowers
+clothes|sock
+clothes|t-shirt
+clothes|dress
+clothes|jacket
+clothes|boots
+clothes|gloves
+clothes|scarf
+clothes|mittens
+clothes|raincoat
+clothes|sandals
+clothes|sweater
+clothes|swimsuit
+coin|United States penny coin
+coin|United States nickel coin
+coin|United States dime coin
+coin|United States quarter coin
+coin|United States one dollar bill
+sign|stop sign
+sign|traffic light
+sign|traffic cone
+sign|crosswalk
+sign|railroad crossing sign
+nature|sunrise
+nature|sunset
+nature|night sky stars
+nature|pond
+nature|stream brook
+nature|meadow flowers
+nature|autumn trees
+nature|spring blossoms
+nature|winter snow trees
+nature|summer beach
+nature|rain puddle
+nature|windy trees
+nature|shadow on ground
+matter|ice melting puddle
+matter|water boiling pot
+matter|steam kettle
+matter|wet towel drying
+matter|sand castle
+matter|clay pottery
+matter|wool yarn
+matter|leather
+matter|aluminum foil
+matter|copper wire
+space|crescent moon
+space|half moon
+space|lunar eclipse
+space|aurora borealis
+space|telescope observatory
+landform|Mount Everest
+landform|Amazon River
+landform|Sahara desert
+landform|Mississippi River
+landform|Rocky Mountains
+landform|Appalachian Mountains
+landform|Great Lakes
+landform|Hawaii volcano
+community|bakery
+community|bank building
+community|museum
+community|airport
+community|train station
+community|police station
+community|dentist
+community|veterinarian
+community|pilot
+community|librarian
+community|bus driver
+community|baker
+community|scientist laboratory
+transport|canoe
+transport|kayak
+transport|ferry
+transport|scooter
+transport|subway train
+transport|tram
+transport|cable car
+transport|cargo ship

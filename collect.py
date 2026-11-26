@@ -23,24 +23,29 @@ def openverse(q, n):
     for it in r.get("results", []):
         t = it.get("title") or ""
         if re.search(r"(map|diagram|logo|flag|chart|drawing|illustration|coat of arms|stamp|poster)", t, re.I): continue
-        out.append({"url": it.get("url"), "page": it.get("foreign_landing_url"), "title": t, "creator": (it.get("creator") or "")[:120],
+        out.append({"url": it.get("thumbnail") or it.get("url"), "page": it.get("foreign_landing_url"), "title": t, "creator": (it.get("creator") or "")[:120],
                     "license": ("CC0" if it.get("license") == "cc0" else "Public domain mark"), "source": "Openverse / " + (it.get("source") or "")})
         if len(out) >= n: break
     return out
 def commons(q, n):
-    p = {"action": "query", "format": "json", "generator": "search", "gsrsearch": q + " filetype:bitmap", "gsrnamespace": 6, "gsrlimit": 40,
-         "prop": "imageinfo", "iiprop": "url|extmetadata|mime", "iiurlwidth": 640}
-    r = getj("https://commons.wikimedia.org/w/api.php", p)
-    pages = sorted((r.get("query") or {}).get("pages", {}).values(), key=lambda x: x.get("index", 99)); out = []
-    for pg in pages:
-        ii = (pg.get("imageinfo") or [{}])[0]; md = ii.get("extmetadata", {})
-        lic = (md.get("LicenseShortName", {}) or {}).get("value", "")
-        if not OK_LIC.match(lic.strip()) or ii.get("mime") not in ("image/jpeg", "image/png"): continue
-        title = pg.get("title", "")
-        if re.search(r"(map|diagram|logo|flag|chart|drawing|illustration|coat of arms|stamp|poster)", title, re.I): continue
-        out.append({"url": ii.get("thumburl") or ii.get("url"), "page": ii.get("descriptionurl"), "title": title.replace("File:", ""),
-                    "creator": re.sub("<[^>]+>", "", (md.get("Artist", {}) or {}).get("value", ""))[:120], "license": lic, "source": "Wikimedia Commons"})
-        if len(out) >= n: break
+    out = []; cont = {}
+    for page in range(4):
+        p = {"action": "query", "format": "json", "generator": "search", "gsrsearch": q + " filetype:bitmap", "gsrnamespace": 6, "gsrlimit": 50,
+             "prop": "imageinfo", "iiprop": "url|extmetadata|mime", "iiurlwidth": 640}
+        p.update(cont)
+        r = getj("https://commons.wikimedia.org/w/api.php", p)
+        pages = sorted((r.get("query") or {}).get("pages", {}).values(), key=lambda x: x.get("index", 999))
+        for pg in pages:
+            ii = (pg.get("imageinfo") or [{}])[0]; md = ii.get("extmetadata", {})
+            lic = (md.get("LicenseShortName", {}) or {}).get("value", "")
+            if not OK_LIC.match(lic.strip()) or ii.get("mime") not in ("image/jpeg", "image/png"): continue
+            title = pg.get("title", "")
+            if re.search(r"(map|diagram|logo|flag|chart|drawing|illustration|coat of arms|stamp|poster|svg)", title, re.I): continue
+            out.append({"url": ii.get("thumburl") or ii.get("url"), "page": ii.get("descriptionurl"), "title": title.replace("File:", ""),
+                        "creator": re.sub("<[^>]+>", "", (md.get("Artist", {}) or {}).get("value", ""))[:120], "license": lic, "source": "Wikimedia Commons"})
+            if len(out) >= n: return out
+        if "continue" not in r: break
+        cont = {k: v for k, v in r["continue"].items()}
     return out
 def nasa(q, n):
     r = getj("https://images-api.nasa.gov/search", {"q": q, "media_type": "image"}); out = []
@@ -60,11 +65,17 @@ def main():
         key = slug(q)
         if key in meta and len(meta[key]["items"]) >= PER: continue
         if time.time() - t0 > float(os.environ.get("MAXSEC", "17000")): break
-        try: cands = (nasa(q, PER) if cat == "space" else []) or commons(q, PER) or openverse(q, PER)
+        try:
+            cands = (nasa(q, PER * 2) if cat == "space" else []) or []
+            if len(cands) < PER * 2: cands += commons(q, PER * 2)
+            if len(cands) < PER * 2: cands += openverse(q, PER * 2)
         except Exception as e: print("search fail", q, e); continue
         if not cands: print("none", q, flush=True); continue
-        items = []; os.makedirs(os.path.join(OUT, key), exist_ok=True)
-        for i, c in enumerate(cands):
+        items = list(meta.get(key, {}).get("items", [])); have = {x.get("page") for x in items}; os.makedirs(os.path.join(OUT, key), exist_ok=True)
+        cands = [c for c in cands if c.get("page") not in have]
+        for c in cands:
+            if len(items) >= PER: break
+            i = len(items)
             try:
                 b = requests.get(c["url"], headers=UA, timeout=60).content; fn = f"{key}/{i}.webp"; save(b, os.path.join(OUT, fn)); c["file"] = fn; items.append(c)
             except Exception as e: print("dl fail", c.get("url"), e)
