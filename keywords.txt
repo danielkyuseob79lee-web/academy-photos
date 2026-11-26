@@ -1,0 +1,374 @@
+# category|search words  (Wikimedia Commons PD/CC0 only; space uses NASA)
+landform|volcano
+landform|erupting volcano
+landform|shield volcano
+landform|mountain range
+landform|snow-capped mountain
+landform|canyon
+landform|valley
+landform|plateau
+landform|mesa
+landform|butte
+landform|hill
+landform|plain grassland
+landform|island
+landform|peninsula
+landform|river delta
+landform|glacier
+landform|iceberg
+landform|desert sand dunes
+landform|waterfall
+landform|lake
+landform|river
+landform|ocean coast
+landform|beach
+landform|cliff
+landform|cave entrance
+landform|bay
+landform|strait
+landform|isthmus
+landform|marsh wetland
+landform|swamp
+landform|forest
+landform|rainforest
+landform|tundra
+landform|savanna
+landform|oasis
+landform|coral reef
+landform|geyser
+landform|hot spring
+landform|sinkhole
+landform|sand bar
+weather|lightning
+weather|tornado
+weather|hurricane from space
+weather|snowfall
+weather|hailstones
+weather|rainbow
+weather|fog
+weather|cumulus clouds
+weather|cirrus clouds
+weather|stratus clouds
+weather|thunderstorm clouds
+weather|frost on leaves
+weather|icicles
+weather|drought cracked earth
+weather|flood
+weather|dust storm
+rock|granite rock
+rock|basalt rock
+rock|sandstone
+rock|limestone
+rock|marble stone
+rock|obsidian
+rock|pumice
+rock|quartz crystal
+rock|fossil ammonite
+rock|fossil fern
+rock|rock layers strata
+rock|weathered rock
+rock|sand grains
+rock|pebbles
+rock|clay soil
+rock|magnetite
+animal|lion
+animal|tiger
+animal|elephant
+animal|giraffe
+animal|zebra
+animal|polar bear
+animal|brown bear
+animal|wolf
+animal|red fox
+animal|rabbit
+animal|squirrel
+animal|deer
+animal|moose
+animal|camel
+animal|kangaroo
+animal|koala
+animal|panda
+animal|chimpanzee
+animal|gorilla
+animal|bat flying
+animal|whale
+animal|dolphin
+animal|seal
+animal|sea otter
+animal|beaver
+animal|horse
+animal|cow
+animal|pig
+animal|sheep
+animal|goat
+animal|donkey
+animal|dog
+animal|cat
+animal|mouse
+animal|bald eagle
+animal|owl
+animal|penguin
+animal|parrot
+animal|hummingbird
+animal|flamingo
+animal|ostrich
+animal|duck
+animal|goose
+animal|chicken
+animal|robin bird
+animal|woodpecker
+animal|crow
+animal|peacock
+animal|sea turtle
+animal|tortoise
+animal|snake
+animal|lizard
+animal|crocodile
+animal|alligator
+animal|chameleon
+animal|frog
+animal|toad
+animal|salamander
+animal|tadpole
+animal|salmon
+animal|shark
+animal|clownfish
+animal|goldfish
+animal|octopus
+animal|jellyfish
+animal|starfish
+animal|crab
+animal|lobster
+animal|snail
+animal|earthworm
+animal|butterfly
+animal|caterpillar
+animal|chrysalis
+animal|honeybee
+animal|ant
+animal|ladybug
+animal|grasshopper
+animal|dragonfly
+animal|spider
+animal|mosquito
+animal|beetle
+animal|moth
+plant|sunflower
+plant|rose flower
+plant|tulip
+plant|daisy
+plant|dandelion
+plant|cactus
+plant|fern
+plant|moss
+plant|mushroom
+plant|oak tree
+plant|pine tree
+plant|palm tree
+plant|maple leaves autumn
+plant|bamboo
+plant|seedling sprout
+plant|seeds
+plant|tree roots
+plant|tree bark
+plant|pine cone
+plant|apple tree
+plant|corn field
+plant|rice paddy
+plant|wheat field
+plant|algae
+plant|lily pad
+plant|venus flytrap
+plant|pollen on flower
+space|moon surface
+space|full moon
+space|Earth from space
+space|Sun
+space|Mars
+space|Jupiter
+space|Saturn rings
+space|Venus
+space|Mercury planet
+space|Neptune
+space|Uranus
+space|comet
+space|galaxy
+space|nebula
+space|astronaut spacewalk
+space|space shuttle launch
+space|International Space Station
+space|solar eclipse
+space|Milky Way
+space|meteor crater
+matter|ice cubes
+matter|boiling water steam
+matter|melting ice
+matter|water droplets
+matter|wooden block
+matter|metal spoon
+matter|glass jar
+matter|plastic bottle
+matter|rubber ball
+matter|cotton fabric
+matter|paper sheets
+matter|rusty metal
+matter|magnet attracting
+matter|salt crystals
+matter|sugar cubes
+matter|sponge
+matter|candle flame
+matter|smoke
+matter|bubbles soap
+object|pizza box
+object|pizza
+object|clock
+object|basketball
+object|soccer ball
+object|book
+object|pencil
+object|scissors
+object|umbrella
+object|backpack
+object|bicycle
+object|chair
+object|table
+object|window
+object|door
+object|cup
+object|plate
+object|spoon
+object|fork
+object|bowl
+object|key
+object|coin
+object|dice
+object|orange fruit
+object|apple fruit
+object|banana
+object|watermelon
+object|egg
+object|bread
+object|cheese
+object|carrot
+object|tomato
+object|ice cream cone
+object|birthday cake
+object|television
+object|telephone
+object|lamp
+object|bed
+object|shoe
+object|hat
+object|glasses
+object|tent
+object|kite
+object|drum
+object|guitar
+object|piano
+object|wheel
+object|ladder
+object|rope
+object|hammer
+object|saw tool
+object|flashlight
+object|battery
+object|light bulb
+object|thermometer
+object|magnifying glass
+object|microscope
+object|telescope
+object|ruler
+object|scale balance
+transport|car
+transport|bus
+transport|train
+transport|airplane
+transport|helicopter
+transport|ship
+transport|sailboat
+transport|submarine
+transport|truck
+transport|tractor
+transport|fire truck
+transport|ambulance
+transport|police car
+transport|motorcycle
+transport|hot air balloon
+transport|rocket
+community|firefighter
+community|police officer
+community|doctor
+community|nurse
+community|teacher in classroom
+community|farmer
+community|mail carrier
+community|chef cooking
+community|construction worker
+community|library
+community|school building
+community|hospital
+community|fire station
+community|post office
+community|grocery store
+community|farm
+community|city street
+community|town square
+community|park playground
+community|bridge
+community|highway
+community|harbor
+community|market
+landmark|Statue of Liberty
+landmark|Golden Gate Bridge
+landmark|Mount Rushmore
+landmark|White House
+landmark|United States Capitol
+landmark|Lincoln Memorial
+landmark|Washington Monument
+landmark|Grand Canyon
+landmark|Yellowstone Old Faithful
+landmark|Niagara Falls
+landmark|Liberty Bell
+landmark|Gateway Arch
+landmark|Independence Hall
+landmark|Alamo Texas
+landmark|Hoover Dam
+landmark|Great Wall of China
+landmark|Eiffel Tower
+landmark|Pyramids of Giza
+landmark|Colosseum Rome
+landmark|Taj Mahal
+landmark|Machu Picchu
+landmark|Stonehenge
+landmark|Big Ben
+landmark|Sydney Opera House
+landmark|Gyeongbokgung Palace
+landmark|Mount Fuji
+landmark|Parthenon Athens
+landmark|Christ the Redeemer
+landmark|Angkor Wat
+landmark|Petra Jordan
+history|Abraham Lincoln portrait
+history|George Washington portrait
+history|Thomas Jefferson portrait
+history|Benjamin Franklin portrait
+history|Martin Luther King Jr
+history|Harriet Tubman
+history|Frederick Douglass portrait
+history|Susan B Anthony
+history|Rosa Parks
+history|Wright brothers flight 1903
+history|steam locomotive
+history|covered wagon
+history|log cabin
+history|Native American tipi
+history|colonial village
+history|Declaration of Independence
+history|US Constitution document
+history|Civil War soldiers
+history|Ellis Island immigrants
+history|assembly line 1913
+map|globe
+map|compass
+map|world map
+map|atlas book
