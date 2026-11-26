@@ -31,7 +31,7 @@ def relevant(title, q):
 OV_OFF = [False]
 def openverse(q, n):
     if OV_OFF[0]: return []
-    r = getj("https://api.openverse.org/v1/images/", {"q": q, "license": "cc0,pdm", "category": "photograph", "page_size": 30, "mature": "false"})
+    r = getj("https://api.openverse.org/v1/images/", {"q": q, "license": "cc0,pdm", "category": "photograph", "page_size": 20, "mature": "false"})
     if not r: OV_OFF[0] = True; print("openverse off for this run", flush=True); return []
     out = []
     for it in r.get("results", []):
